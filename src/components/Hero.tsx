@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroPhoneMockup from "@/assets/Grey_Black_Modern_Digital_Product_Mockup_Shadow_Instagram_Post-removebg-preview.png";
+import { SiGoogleplay, SiAppstore } from "react-icons/si";
 
 export const Hero = () => {
   return (
@@ -20,7 +21,7 @@ export const Hero = () => {
               EventConnect makes every gathering unforgettable.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-scale-in" style={{ animationDelay: '0.6s' }}>
+            <div className="flex flex-row gap-4 mb-4 animate-scale-in" style={{ animationDelay: '0.6s' }}>
               <Button 
                 size="lg" 
                 className="bg-white text-primary hover:bg-blue-50 transition-smooth shadow-medium group text-lg px-8 py-4"
@@ -29,11 +30,10 @@ export const Hero = () => {
                 Try for Free
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
               </Button>
-              
               <Button 
-                variant="outline" 
                 size="lg"
-                className="border-white/30 text-white hover:bg-white/10 transition-smooth text-lg px-8 py-4"
+                className="bg-primary text-white hover:bg-primary/90 transition-smooth shadow-medium group text-lg px-8 py-4"
+                onClick={() => {/* Add your demo video link or modal here */}}
               >
                 <Play className="mr-2 h-5 w-5" />
                 Watch Demo
@@ -58,7 +58,7 @@ export const Hero = () => {
               <img 
                 src={heroPhoneMockup} 
                 alt="EventConnect App Mockup" 
-                className="w-full h-auto shadow-large rounded-3xl"
+                className="w-full h-auto max-h-[600px] md:max-h-[700px] shadow-large rounded-3xl"
               />
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 animate-float animate-bounce-in" style={{ animationDelay: '1.2s' }}>
@@ -67,6 +67,24 @@ export const Hero = () => {
               <div className="absolute -bottom-6 -left-6 bg-white/20 backdrop-blur-sm rounded-lg p-3 animate-float animate-scale-in" style={{ animationDelay: '1.5s' }}>
                 <span className="text-white text-sm font-semibold">Live Event</span>
               </div>
+            </div>
+            <div className="flex flex-row gap-4 justify-center mt-8">
+              <Button
+                size="lg"
+                className="bg-black text-white hover:bg-gray-800 transition-smooth shadow-medium group text-lg px-8 py-4 flex items-center"
+                onClick={() => window.open('https://play.google.com/store/apps/details?id=your.app.id', '_blank')}
+              >
+                <SiGoogleplay className="mr-2 h-5 w-5" />
+                Download on Google Play
+              </Button>
+              <Button
+                size="lg"
+                className="bg-black text-white hover:bg-gray-800 transition-smooth shadow-medium group text-lg px-8 py-4 flex items-center"
+                onClick={() => window.open('https://www.apple.com/app-store/', '_blank')}
+              >
+                <SiAppstore className="mr-2 h-5 w-5" />
+                Download on App Store
+              </Button>
             </div>
           </div>
         </div>
