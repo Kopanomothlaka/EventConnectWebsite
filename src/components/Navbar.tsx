@@ -55,11 +55,13 @@ export const Navbar = () => {
             <Button 
               variant="outline" 
               className="border-border hover:bg-muted transition-smooth"
+              onClick={() => window.location.href = '/sign-in'}
             >
               Sign In
             </Button>
             <Button 
               className="gradient-primary text-primary-foreground hover:opacity-90 transition-smooth group"
+              onClick={() => window.location.href = '/try-free'}
             >
               Try Free
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-smooth" />
@@ -97,13 +99,19 @@ export const Navbar = () => {
                 <Button 
                   variant="outline" 
                   className="w-full justify-center"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false);
+                    window.location.href = '/sign-in';
+                  }}
                 >
                   Sign In
                 </Button>
                 <Button 
                   className="w-full gradient-primary text-primary-foreground hover:opacity-90 transition-smooth group"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false);
+                    window.location.href = '/try-free';
+                  }}
                 >
                   Try Free
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-smooth" />
