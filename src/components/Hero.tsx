@@ -68,7 +68,7 @@ export const Hero = () => {
                 <span className="text-white text-sm font-semibold">Live Event</span>
               </div>
             </div>
-            <div className="flex flex-row gap-4 justify-center mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
               <Button
                 size="lg"
                 className="bg-black text-white hover:bg-gray-800 transition-smooth shadow-medium group text-lg px-8 py-4 flex items-center"
