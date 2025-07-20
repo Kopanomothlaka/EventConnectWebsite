@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ArrowRight } from "lucide-react";
+import Logo from "@/assets/Sleek__EventConnect__Logo_with_Overlapping_Circles-removebg-preview.png";
 
 const navItems = [
   { name: "Features", href: "#features" },
@@ -29,9 +30,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="gradient-primary w-10 h-10 rounded-xl flex items-center justify-center mr-3">
-              <span className="text-primary-foreground font-bold text-lg">E</span>
-            </div>
+            <img src={Logo} alt="EventConnect Logo" className="w-10 h-10 mr-3 rounded-xl bg-white object-contain" />
             <span className="text-2xl font-bold text-foreground">
               EventConnect
             </span>

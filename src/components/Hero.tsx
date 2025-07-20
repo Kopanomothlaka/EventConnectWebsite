@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import heroPhoneMockup from "@/assets/hero-phone-mockup.png";
+import heroPhoneMockup from "@/assets/Grey_Black_Modern_Digital_Product_Mockup_Shadow_Instagram_Post-removebg-preview.png";
 
 export const Hero = () => {
   return (
@@ -57,7 +57,7 @@ export const Hero = () => {
             <div className="relative mx-auto max-w-sm">
               <img 
                 src={heroPhoneMockup} 
-                alt="EventConnect App Interface" 
+                alt="EventConnect App Mockup" 
                 className="w-full h-auto shadow-large rounded-3xl"
               />
               {/* Floating elements */}

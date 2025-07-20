@@ -15,15 +15,15 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    /* Primary: Modern blue gradient */
-    --primary: 213 94% 68%;
+    /* Primary: Brand color */
+    --primary: 174 33% 60%; /* #80b8b7 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 213 100% 78%;
-    --primary-dark: 213 94% 58%;
+    --primary-light: 174 33% 80%; /* lighter #80b8b7 */
+    --primary-dark: 174 33% 40%; /* darker #80b8b7 */
 
-    /* Secondary: Soft blue */
-    --secondary: 213 100% 96%;
-    --secondary-foreground: 213 94% 68%;
+    /* Secondary: #363e41 */
+    --secondary: 200 8% 24%; /* #363e41 */
+    --secondary-foreground: 174 33% 60%;
 
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
@@ -40,7 +40,7 @@
 
     /* Custom gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(213 94% 68%) 0%, hsl(213 93% 78%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
     --gradient-feature: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(220 14.3% 98%) 100%);
     
     /* Shadows */
